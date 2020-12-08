@@ -30,7 +30,7 @@ for line in inp:
     if seat_ID > maxi:
         maxi = seat_ID
 
-print("Result for part 1: ", maxi)
+print("Result for part 1: ", maxi)  # 919
 
 
 ### Part 2
@@ -50,5 +50,5 @@ def find_missing(lst):
 
 my_seat = find_missing(IDs)
 
-print("Result for part 2: ", my_seat)
+print("Result for part 2: ", my_seat)  # 642
 
