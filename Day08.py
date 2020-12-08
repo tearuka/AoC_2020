@@ -19,18 +19,12 @@ def run_instructions(data):
             return(accumulator)
         positions_visited.append(pointer)
         operation = data[pointer][0]
-        sign, num = data[pointer][1][0], int(data[pointer][1][1:])
+        num = int(data[pointer][1])
         if operation == 'acc':
-            if sign == '+':
-                accumulator += num
-            elif sign == '-':
-                accumulator -= num
+            accumulator += num
             pointer += 1
         elif operation == 'jmp':
-            if sign == '+':
-                pointer += num
-            elif sign == '-':
-                pointer -= num
+            pointer += num
         elif operation == 'nop':
             pointer += 1
     return(accumulator)
