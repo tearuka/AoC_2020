@@ -19,7 +19,7 @@ def toboggan(data, step_x, step_y):
     x = 0
     y = 0
     trees = 0
-    for step in range((len(data) - 1) // step_y):
+    for _ in range((len(data) - 1) // step_y):
         x = x + step_x
         y = y + step_y
         value = data[y][x]
