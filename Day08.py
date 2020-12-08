@@ -29,7 +29,7 @@ def run_instructions(data):
             pointer += 1
     return(accumulator)
 
-print('Result for part 1: ', run_instructions(inp))
+print('Result for part 1: ', run_instructions(inp))  # 1797
 
 
 ### Part 2
@@ -44,3 +44,5 @@ for index in indices_all:
     elif data_changed[index][0] == 'nop':
         data_changed[index][0] = 'jmp'
     run_instructions(data_changed)
+ 
+# Result for part 2: 1036
