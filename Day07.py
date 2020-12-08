@@ -13,7 +13,7 @@ bags = [line.replace('bags','bag').replace('.','').split(' contain ') for line i
 def find_bags(data):
     RES = []
     lst = ['shiny gold bag']
-    while lst != []:
+    while lst:
         lst_res = []
         for bag_name in lst:
             for line in data:
@@ -34,7 +34,7 @@ def search_for_bag(data):
     counter = 0
     lst = ['shiny gold bag']
     lstn = [1]
-    while lst != []:
+    while lst:
         lst_name = []
         lst_num = []
         for line in data:
