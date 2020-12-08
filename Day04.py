@@ -23,7 +23,7 @@ counter = 0
 for line in inp:
     counter += contains_all(line,required_fields)
     
-print("Result for part 1: ", counter)
+print("Result for part 1: ", counter)  # 190
 
 
 ### Part 2
@@ -88,5 +88,5 @@ for line in passports:
     # check if each passport is OK
     result_count += check_validity(byr,iyr,eyr,hgt,hcl,ecl,pid)
     
-print("Result for part 2: ", result_count)
+print("Result for part 2: ", result_count)  # 121
 
