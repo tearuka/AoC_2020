@@ -1,7 +1,8 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-#read input
+
+# read input
 inp = open("inp/input_03.txt").read().splitlines()
 
 
@@ -18,7 +19,7 @@ def toboggan(data, step_x, step_y):
     x = 0
     y = 0
     trees = 0
-    for step in range(int((len(data) - 1)/step_y)):
+    for step in range((len(data) - 1) // step_y):
         x = x + step_x
         y = y + step_y
         value = data[y][x]
@@ -27,7 +28,8 @@ def toboggan(data, step_x, step_y):
 
 inp_big = expand_grid(inp, 3)
 result_part1 = toboggan(inp_big, 3, 1)
-print("Result for part 1: ", result_part1)
+
+print("Result for part 1: ", result_part1)  # 145
 
 
 ### Part 2
@@ -40,5 +42,5 @@ res4 = toboggan(inp_bigg, 7, 1)
 res5 = toboggan(inp_bigg, 1, 2)
 
 result_part2 = res1 * res2 * res3 * res4 * res5
-print("Result for part 2: ", result_part2)
 
+print("Result for part 2: ", result_part2)  # 3424528800
