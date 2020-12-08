@@ -14,7 +14,7 @@ count_unique = 0
 for line in inp_all:
     count_unique += len(set(line))
 
-print("Result for part 1: ", count_unique)
+print("Result for part 1: ", count_unique)  # 6249
 
 
 ### Part 2
@@ -32,4 +32,4 @@ for line in inp_sep:
     matching = lst[0].intersection(*lst)
     count_intersect += len(matching)
 
-print("Result for part 2: ", count_intersect)
+print("Result for part 2: ", count_intersect)  # 3103
