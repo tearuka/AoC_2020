@@ -15,10 +15,7 @@ def is_sum(data, objective, preamble):
         difference = objective - num
         if difference not in data:
             counter += 1
-    if counter < preamble:
-        return(0)
-    else:
-        return(1)
+    return counter >= preamble
 
 def find_number(data, preamble):
     pos = 0
@@ -26,7 +23,7 @@ def find_number(data, preamble):
         result = is_sum(data[pos : preamble + pos], number, preamble)
         pos += 1
         if result == 1 :
-            return(number)
+            return number
 
 res1 = find_number(inp, 25)
 
@@ -44,7 +41,7 @@ def find_list_sum(data, objective):
             lst.append(data[pos])
             pos = pos + 1
             if suma == objective:
-                return(min(lst) + max(lst))
+                return min(lst) + max(lst)
 
 res2 = find_list_sum(inp, res1)
 
