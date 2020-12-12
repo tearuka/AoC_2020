@@ -38,7 +38,7 @@ print('Result for part 1: ', res1)  # 1998
 ### Part 2
 
 # number of combinations depending on sublist length {sublist length : number of possible combinations}
-dict_combo = {1:1, 2:1, 3:2, 4:4, 5:7, 6:11}
+dict_combo = {1:1, 2:1, 3:2, 4:4, 5:7, 6:13}
 
 def find_combinations(data, where_to_cut):
     combos = 1
